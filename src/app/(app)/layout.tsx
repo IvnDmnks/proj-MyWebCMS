@@ -3,6 +3,7 @@ import Navbar from '@/components/Navbar';
 import Section from '@/components/section';
 import type { Metadata } from "next";
 import './globals.css'
+import { ThemeProvider } from '@/components/theme-provider';
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,9 +18,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="flex flex-col min-h-screen bg-bgPrimary">
-        <Navbar />
-        <Section>{children}</Section>
-        <Footer />
+        <ThemeProvider defaultTheme='dark'>
+          <Navbar />
+            <Section>{children}</Section>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

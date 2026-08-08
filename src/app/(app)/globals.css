@@ -1,28 +1,30 @@
 @import "tailwindcss";
 
-@layer utilities {
-  .bg-bgPrimary {
-    background-color: #F9F9F9;
-  }
+@custom-variant dark (&:where(.dark, .dark *));
 
-  .bg-bgSecondary {
-    background-color: #daf3dc;
-  }
+:root {
+  --bg-primary: #F9F9F9;
+  --bg-secondary: #daf3dc;
+  --text-primary: #424242;
+  --text-secondary: #4CAF50;
+}
 
-  .text-textPrimary {
-    color: #424242;
-  }
+.dark {
+  --bg-primary: #121212;       
+  --bg-secondary: #1e3a2b;    
+  --text-primary: #e0e0e0;     
+  --text-secondary: #66bb6a;  
+}
 
-  .text-textSecondary {
-    color: #4CAF50;
-  }
+@theme {
+  --color-bgPrimary: var(--bg-primary);
+  --color-bgSecondary: var(--bg-secondary);
+  --color-textPrimary: var(--text-primary);
+  --color-textSecondary: var(--text-secondary);
+}
 
-  /* Hover állapotok */
-  .hover\:bg-bgSecondary:hover {
-    background-color: #daf3dc;
-  }
-
-  .hover\:text-textSecondary:hover {
-    color: #4CAF50;
-  }
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.2s ease, color 0.2s ease;
 }

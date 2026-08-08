@@ -1,41 +1,51 @@
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { ThemeToggle } from '@/components/ui/theme-toggle';
+import Link from 'next/link';
 
 export default function Navbar() {
   return (
-    <nav className='text-textPrimary p-4 sticky top-0 border-b border-gray-300 bg-bgPrimary'>
+    <nav className='text-textPrimary p-4 sticky top-0 border-b border-gray-300 dark:border-gray-800 bg-bgPrimary backdrop-blur-md z-50'>
       <div className='container mx-auto flex justify-between items-center'>
         <div className='flex items-center space-x-3'>
           <Avatar>
             <AvatarImage src='/IvanDomonkosProfilkep.png' alt='Iván Domonkos'/>
             <AvatarFallback>ID</AvatarFallback>
           </Avatar>
-          <a className='text-2xl font-bold focus:outline-none focus:ring-0 hover:text-textSecondary' href='/homepage'>Iván Domonkos</a>
+          <Link 
+            href='/homepage' 
+            className='text-2xl font-bold focus:outline-none focus:ring-0 hover:text-textSecondary'
+          >
+            Iván Domonkos
+          </Link>
         </div>
-        <ul className='flex space-x-4'>
+        <ul className='flex items-center space-x-6'>
           <li>
-            <a href='/homepage' className='hover:text-textSecondary text-lg text-textPrimary'>
+            <Link href='/homepage' className='hover:text-textSecondary text-lg text-textPrimary transition-colors'>
               Hi! My name is...
-            </a>
+            </Link>
           </li>
           <li>
-            <a href='/projects' className='hover:text-textSecondary text-lg text-textPrimary'>
+            <Link href='/ownprojects' className='hover:text-textSecondary text-lg text-textPrimary transition-colors'>
               Projects
-            </a>
+            </Link>
           </li>
           <li>
-            <a href='/roadmap' className='hover:text-textSecondary text-lg text-textPrimary'>
+            <Link href='/roadmap' className='hover:text-textSecondary text-lg text-textPrimary transition-colors'>
               Roadmap
-            </a>
+            </Link>
           </li>
           <li>
-            <a href='/tictactoe' className='hover:text-textSecondary text-lg text-textPrimary'>
+            <Link href='/tictactoe' className='hover:text-textSecondary text-lg text-textPrimary transition-colors'>
               TicTacToe
-            </a>
+            </Link>
           </li>
           <li>
-            <a href='/webshop' className='hover:text-textSecondary text-lg text-textPrimary'>
+            <Link href='/webshop' className='hover:text-textSecondary text-lg text-textPrimary transition-colors'>
               WebShop
-            </a>
+            </Link>
+          </li>
+          <li className='flex items-center pl-2'>
+            <ThemeToggle />
           </li>
         </ul>
       </div>
