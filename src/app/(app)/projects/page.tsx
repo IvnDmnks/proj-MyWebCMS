@@ -35,7 +35,7 @@ export default function Projects() {
         Recently I worked on these projects:
       </h1>
       {projects.map((e) => (
-        <Card key={e.id} className="m-4">
+        <Card key={e.id} className="m-4 max-w-[800px] justify-center mx-auto">
           <CardHeader>
             <CardTitle>{e.ProjTitle}</CardTitle>
             <CardDescription>{e.description}</CardDescription>
@@ -44,7 +44,7 @@ export default function Projects() {
             {e.ProjLink && (
               <a
                 href={e.ProjLink}
-                className="hover:text-secondary-text-color"
+                className="hover:text-textSecondary"
                 target="_blank"
                 rel="noreferrer"
               >

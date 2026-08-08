@@ -43,14 +43,14 @@ export default function Weather() {
   });
 
   return (
-    <div>
-      <h1 className='text-4xl p-4 m-4 font-bold text-center border border-secondary-color rounded-lg'>
+    <div className='container mx-auto'>
+      <h1 className='text-4xl p-4 m-4 font-bold text-center border border-bgSecondary rounded-lg bg-bgSecondary'>
         Weather in {q}
       </h1>
       <div className='overflow-x-auto whitespace-nowrap p-4'>
-        <div className='flex space-x-4'>
+        <div className='flex space-x-8 justify-center'>
           {forecast.map((day) => (
-            <Card key={day.date} className='min-w-[250px] p-4 shadow-md border rounded-lg'>
+            <Card key={day.date} className='min-w-[250px] p-4 shadow-md border rounded-lg text-center'>
               <CardHeader>
                 <CardTitle className='text-lg font-bold'>{day.date}</CardTitle>
               </CardHeader>

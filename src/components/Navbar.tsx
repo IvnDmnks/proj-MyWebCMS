@@ -1,50 +1,40 @@
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from '../components/ui/dropdown-menu';
 
 export default function Navbar() {
   return (
-    <nav className=' text-primary-text-color p-4 sticky top-0 border-b border-gray-300 bg-primary-color'>
+    <nav className='text-textPrimary p-4 sticky top-0 border-b border-gray-300 bg-bgPrimary'>
       <div className='container mx-auto flex justify-between items-center'>
         <div className='flex items-center space-x-3'>
           <Avatar>
-            <AvatarImage src='/IvanDomonkosProfilkep.png' />
+            <AvatarImage src='/IvanDomonkosProfilkep.png' alt='Iván Domonkos'/>
             <AvatarFallback>ID</AvatarFallback>
           </Avatar>
-          <DropdownMenu>
-            <DropdownMenuTrigger className='text-2xl font-bold hover:text-secondary-text-color focus:outline-none focus:ring-0'>
-              Iván Domonkos
-            </DropdownMenuTrigger>
-            <DropdownMenuContent>
-              {
-                //? What should be here?
-              }
-              <DropdownMenuLabel>My Account</DropdownMenuLabel>
-              <DropdownMenuSeparator />
-              <DropdownMenuItem>Profile</DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
+          <a className='text-2xl font-bold focus:outline-none focus:ring-0 hover:text-textSecondary' href='/homepage'>Iván Domonkos</a>
         </div>
         <ul className='flex space-x-4'>
           <li>
-            <a href='/homepage' className='hover:text-secondary-text-color text-lg text-primary-text-color '>
+            <a href='/homepage' className='hover:text-textSecondary text-lg text-textPrimary'>
               Hi! My name is...
             </a>
           </li>
           <li>
-            <a href='/projects' className='hover:text-secondary-text-color text-lg text-primary-text-color'>
+            <a href='/projects' className='hover:text-textSecondary text-lg text-textPrimary'>
               Projects
             </a>
           </li>
           <li>
-            <a href='/roadmap' className='hover:text-secondary-text-color text-lg text-primary-text-color'>
+            <a href='/roadmap' className='hover:text-textSecondary text-lg text-textPrimary'>
               Roadmap
+            </a>
+          </li>
+          <li>
+            <a href='/tictactoe' className='hover:text-textSecondary text-lg text-textPrimary'>
+              TicTacToe
+            </a>
+          </li>
+          <li>
+            <a href='/webshop' className='hover:text-textSecondary text-lg text-textPrimary'>
+              WebShop
             </a>
           </li>
         </ul>
