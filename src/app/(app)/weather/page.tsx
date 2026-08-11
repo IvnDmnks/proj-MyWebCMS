@@ -2,7 +2,6 @@
 
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const key = process.env.NEXT_PUBLIC_WEATHER_API;
@@ -11,25 +10,27 @@ const days = 7;
 
 async function getWeather() {
   try {
-    const response = await axios.get(`https://api.weatherapi.com/v1/forecast.json?key=${key}&q=${q}&days=${days}`);
+    const response = await axios.get(
+      `https://api.weatherapi.com/v1/forecast.json?key=${key}&q=${q}&days=${days}`
+    );
     return response;
   } catch (error) {
     console.error(error);
   }
 }
 
-export default function Weather() {
-  interface ForecastDay {
-    date: string;
-    day: {
-      maxtemp_c: number;
-      mintemp_c: number;
-      condition: {
-        text: string;
-      };
+interface ForecastDay {
+  date: string;
+  day: {
+    maxtemp_c: number;
+    mintemp_c: number;
+    condition: {
+      text: string;
     };
-  }
+  };
+}
 
+export default function Weather() {
   const [forecast, setForecast] = useState<ForecastDay[]>([]);
 
   useEffect(() => {
@@ -40,7 +41,7 @@ export default function Weather() {
         }
       })
       .catch((err) => err);
-  });
+  }, []);
 
   return (
     <div className='container mx-auto'>
