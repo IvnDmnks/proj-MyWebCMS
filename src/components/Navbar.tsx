@@ -1,5 +1,6 @@
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { ThemeToggle } from '@/components/ui/theme-toggle';
+import LanguageToggle from '@/components/ui/language-toggle';
 import Link from 'next/link';
 
 export default function Navbar() {
@@ -46,6 +47,9 @@ export default function Navbar() {
           </li>
           <li className='flex items-center pl-2'>
             <ThemeToggle />
+          </li>
+          <li className='flex items-center pl-2'>
+            <LanguageToggle />
           </li>
         </ul>
       </div>
