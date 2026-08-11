@@ -1,0 +1,19 @@
+{
+    "navbar": {
+        "greetings": "Szia! A nevem...",
+        "proj": "Projektjeim",
+        "roadmap": "Út a mérnökségig",
+        "tictactoe": "Amőba",
+        "webshop": "Webshop"
+    },
+    "homepage": {
+        "title": "Szia! Iván Domonkos vagyok!",
+        "h2_title": "Ez egy szimpla webprojekt ami megmutatja mit tudok a webfejlesztésben.",
+        "about": {
+            "title": "Rólam",
+            "description": "Mérnökinformatikus hallgató vagyok a Budapesti Műszaki és Gazdaságtudományi Egyetemen (BME). Néha megmondom a számítógépnek, mit csináljon – és néha még hallgat is rám.",
+            "weather_cta": "Mellesleg, ha kíváncsi vagy az itteni időjárásra, itt meglesheted (ez a saját időjárás API oldalam):",
+            "weather_url": "https://ivandomonkos.site/weather"
+        }
+    }
+}

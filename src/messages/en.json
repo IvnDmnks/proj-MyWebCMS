@@ -1,0 +1,19 @@
+{
+    "navbar": {
+        "greetings": "Hi! My name is...",
+        "proj": "Projects",
+        "roadmap": "Roadmap",
+        "tictactoe": "TicTacToe",
+        "webshop": "Webshop"
+    },
+    "homepage": {
+        "title": "Hi! I'm Iván Domonkos!",
+        "h2_title": "This is a simple web project to show my skills in web development.",
+        "about": {
+            "title": "About me",
+            "description": "I'm a Computer Science Engineering student at the Budapest University of Technology and Economics (BME). Sometimes I tell the computer what to do – and sometimes it even listens to me.",
+            "weather_cta": "Anyway, if you want to check the weather here, you can do it here (it's my own weather API site):",
+            "weather_url": "https://ivandomonkos.site/weather"
+        }
+    }
+}
