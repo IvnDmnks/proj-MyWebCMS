@@ -11,7 +11,7 @@ const days = 7;
 
 async function getWeather() {
   try {
-    const response = await axios.get(`http://api.weatherapi.com/v1/forecast.json?key=${key}&q=${q}&days=${days}`);
+    const response = await axios.get(`https://api.weatherapi.com/v1/forecast.json?key=${key}&q=${q}&days=${days}`);
     return response;
   } catch (error) {
     console.error(error);

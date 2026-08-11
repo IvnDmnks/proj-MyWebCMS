@@ -18,8 +18,8 @@ export default function Projects() {
 
   const onGetData = async () => {
     try {
-      const res = await axios.get('/api/projects'); // Payload API
-      setProjects(res.data.docs); // Payload JSON-ban a dokumentumok a "docs" mezőben vannak
+      const res = await axios.get('/api/projects');
+      setProjects(res.data.docs);
     } catch (error) {
       console.error('Error fetching projects:', error);
     }
