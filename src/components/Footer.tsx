@@ -3,6 +3,8 @@ import { FaSquareEnvelope, FaSquareFacebook, FaSquareGithub, FaSquareInstagram }
 import { Table, TableBody, TableCaption, TableCell, TableRow } from './ui/table';
 
 export default function Footer() {
+  const year = new Date().getFullYear()
+
   return (
     <footer className='text-textPrimary p-4 border-t border-gray-300 '>
       <Table className='mx-auto text-center justify-center items-center space-x-3 grid'>
@@ -45,7 +47,7 @@ export default function Footer() {
             </TableCell>
           </TableRow>
         </TableBody>
-        <TableCaption>© 2025 Iván Domonkos</TableCaption>
+        <TableCaption>©{year} Iván Domonkos</TableCaption>
       </Table>
     </footer>
   );
