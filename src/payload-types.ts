@@ -70,6 +70,7 @@ export interface Config {
     users: User;
     media: Media;
     projects: Project;
+    webshop: Webshop;
     'payload-locked-documents': PayloadLockedDocument;
     'payload-preferences': PayloadPreference;
     'payload-migrations': PayloadMigration;
@@ -79,6 +80,7 @@ export interface Config {
     users: UsersSelect<false> | UsersSelect<true>;
     media: MediaSelect<false> | MediaSelect<true>;
     projects: ProjectsSelect<false> | ProjectsSelect<true>;
+    webshop: WebshopSelect<false> | WebshopSelect<true>;
     'payload-locked-documents': PayloadLockedDocumentsSelect<false> | PayloadLockedDocumentsSelect<true>;
     'payload-preferences': PayloadPreferencesSelect<false> | PayloadPreferencesSelect<true>;
     'payload-migrations': PayloadMigrationsSelect<false> | PayloadMigrationsSelect<true>;
@@ -176,6 +178,22 @@ export interface Project {
   createdAt: string;
 }
 /**
+ * Web Shop Items
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "webshop".
+ */
+export interface Webshop {
+  id: number;
+  itemName: string;
+  itemDescription: string;
+  itemPrice: number;
+  itemImage?: (number | null) | Media;
+  itemAvailability: 'in_stock' | 'out_of_stock';
+  updatedAt: string;
+  createdAt: string;
+}
+/**
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "payload-locked-documents".
  */
@@ -193,6 +211,10 @@ export interface PayloadLockedDocument {
     | ({
         relationTo: 'projects';
         value: number | Project;
+      } | null)
+    | ({
+        relationTo: 'webshop';
+        value: number | Webshop;
       } | null);
   globalSlug?: string | null;
   user: {
@@ -285,6 +307,19 @@ export interface ProjectsSelect<T extends boolean = true> {
   description?: T;
   ProjLink?: T;
   Availability?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "webshop_select".
+ */
+export interface WebshopSelect<T extends boolean = true> {
+  itemName?: T;
+  itemDescription?: T;
+  itemPrice?: T;
+  itemImage?: T;
+  itemAvailability?: T;
   updatedAt?: T;
   createdAt?: T;
 }
