@@ -7,6 +7,10 @@
         "webshop": "Webshop"
     },
     "homepage": {
+        "notice": {
+            "title": "Under Development! 🚧",
+            "description": "This website is currently under active development. Some features or content may be incomplete or missing."
+        },
         "title": "Hi! I'm Iván Domonkos!",
         "h2_title": "This is a simple web project to show my skills in web development.",
         "about": {

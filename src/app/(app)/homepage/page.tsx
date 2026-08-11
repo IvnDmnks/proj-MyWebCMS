@@ -7,6 +7,15 @@ export default function HomePage() {
 
   return (
     <div className='container mx-auto'>
+      <div className='m-4 p-4 border-l-4 border-amber-500 bg-amber-500/10 rounded-r-lg text-amber-900 dark:text-amber-200'>
+        <div className='flex items-center gap-2 font-bold text-lg'>
+          <span>🚧</span>
+          <span>{t.homepage.notice.title}</span>
+        </div>
+        <p className='mt-1 text-sm opacity-90'>
+          {t.homepage.notice.description}
+        </p>
+      </div>
       <h1 className='text-4xl p-4 m-4 font-bold text-center border border-bgSecondary rounded-lg bg-bgSecondary'>
         {t.homepage.title}
       </h1>

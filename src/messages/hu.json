@@ -7,6 +7,10 @@
         "webshop": "Webshop"
     },
     "homepage": {
+        "notice": {
+            "title": "Fejlesztés alatt! 🚧",
+            "description": "Az oldal jelenleg folyamatos fejlesztés alatt áll. Néhány funkció vagy tartalom még hibás lehet vagy hiányozhat."
+        },
         "title": "Szia! Domi vagyok!",
         "h2_title": "Ez egy szimpla webprojekt ami megmutatja mit tudok a webfejlesztésben.",
         "about": {
