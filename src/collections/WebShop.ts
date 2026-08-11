@@ -6,6 +6,9 @@ const WebShop: CollectionConfig = {
         description: 'Web Shop Items',
         useAsTitle: 'itemName',
     },
+    access: {
+        read: () => true,
+    },
     fields: [
         {
             name: 'itemName',

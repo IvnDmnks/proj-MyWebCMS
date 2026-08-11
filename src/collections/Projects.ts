@@ -6,6 +6,9 @@ const Projects: CollectionConfig = {
         description: 'Projects I have worked on',
         useAsTitle: 'ProjTitle',
     },
+    access: {
+        read: () => true,
+    },
     fields: [
         {
             name: 'ProjTitle',
