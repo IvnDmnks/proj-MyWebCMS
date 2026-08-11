@@ -173,7 +173,7 @@ export interface Project {
   ProjTitle: string;
   description: string;
   ProjLink?: string | null;
-  Availability: 'under_development' | 'production_ready';
+  Availability: 'Under Development' | 'Production Ready';
   updatedAt: string;
   createdAt: string;
 }
