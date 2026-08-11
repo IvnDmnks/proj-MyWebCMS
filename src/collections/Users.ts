@@ -14,10 +14,6 @@ export const Users: CollectionConfig = {
     delete: ({ req: { user } }) => Boolean(user),
   },
   fields: [
-    {
-      name: 'name',
-      type: 'text',
-      label: 'Név',
-    },
+    //empty
   ],
 }
