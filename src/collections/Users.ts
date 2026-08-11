@@ -4,11 +4,20 @@ export const Users: CollectionConfig = {
   slug: 'users',
   admin: {
     useAsTitle: 'email',
-    description: 'Felhasználók, akik be tudnak jelentkezni az admin felületre.',
+    description: 'Admin felhasználó az oldal kezeléséhez.',
   },
   auth: true,
+  access: {
+    read: ({ req: { user } }) => Boolean(user),
+    create: ({ req: { user } }) => Boolean(user),
+    update: ({ req: { user } }) => Boolean(user),
+    delete: ({ req: { user } }) => Boolean(user),
+  },
   fields: [
-    // Email added by default
-    // Add more fields as needed
+    {
+      name: 'name',
+      type: 'text',
+      label: 'Név',
+    },
   ],
 }
