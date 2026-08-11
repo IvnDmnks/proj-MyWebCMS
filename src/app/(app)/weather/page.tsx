@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
-const key = process.env.NEXT_PUBLIC_WEATHER_API_KEY;
+const key = process.env.NEXT_PUBLIC_WEATHER_API;
 const q = 'Budapest';
 const days = 7;
 
