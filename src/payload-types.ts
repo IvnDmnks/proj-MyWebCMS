@@ -122,7 +122,7 @@ export interface UserAuthOperations {
   };
 }
 /**
- * Felhasználók, akik be tudnak jelentkezni az admin felületre.
+ * Admin felhasználó az oldal kezeléséhez.
  *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "users".
