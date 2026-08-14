@@ -19,5 +19,20 @@
             "weather_cta": "Anyway, if you want to check the weather here, you can do it here (it's my own weather API site):",
             "weather_url": "https://ivandomonkos.site/weather"
         }
+    },
+    "projects": {
+        "page_title": "Recently I worked on these projects:",
+        "github_link": "GitHub Repository",
+        "status_label": "Status: ",
+        "project_status":  {
+            "under_development": "Under Development",
+            "production_ready": "Production Ready"
+        }
+    },
+    "tictactoe": {
+        "page_title": "Tic Tac Toe Game",
+        "reset_button": "Reset Game",
+        "winner_text": "Winner: ",
+        "draw_text": "Döntetlen"
     }
 }
