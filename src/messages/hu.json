@@ -23,7 +23,7 @@
     "projects": {
         "page_title": "A legútóbbi projektjeim:",
         "github_link": "GitHub Repository",
-        "status_label": "Állapot",
+        "status_label": "Állapot: ",
         "project_status":  {
             "under_development": "Fejlesztés alatt",
             "production_ready": "Elkészült"

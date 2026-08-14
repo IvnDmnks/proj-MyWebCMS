@@ -19,7 +19,7 @@ export default function Projects() {
   const { t } = useLanguage();
   const [projects, setProjects] = useState<Project[]>([]);
 
-  const isHu = t.projects?.status_label === 'Állapot:';
+  const isHu = t.projects?.status_label === 'Állapot: ';
 
   const onGetData = async () => {
     try {

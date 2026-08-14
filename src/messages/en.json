@@ -23,7 +23,7 @@
     "projects": {
         "page_title": "Recently I worked on these projects:",
         "github_link": "GitHub Repository",
-        "status_label": "Status:",
+        "status_label": "Status: ",
         "project_status":  {
             "under_development": "Under Development",
             "production_ready": "Production Ready"
