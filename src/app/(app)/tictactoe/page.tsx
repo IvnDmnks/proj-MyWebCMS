@@ -2,6 +2,8 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 
+import { useLanguage } from '@/components/language-provider';
+
 export default function TicTacToe() {
     const [board,setBoard] = useState(Array(9).fill(null));
     const [currentPlayer, setCurrentPlayer] = useState<"X" | "O">("X");
@@ -122,9 +124,11 @@ export default function TicTacToe() {
         setIsGameOver(false);
         setWinner(null);
     };
+
+    const { t } = useLanguage();
     return (
         <div className='container mx-auto'>
-            <h1 className='text-4xl p-4 m-4 font-bold text-center border border-bgSecondary rounded-lg bg-bgSecondary'>Tic Tac Toe Game</h1>
+            <h1 className='text-4xl p-4 m-4 font-bold text-center border border-bgSecondary rounded-lg bg-bgSecondary'> {t?.tictactoe?.page_title} </h1>
             <div className = 'flex justify-center items-center '>
                 <div className='grid grid-cols-3 gap-4'>
                     {board.map((cell, index) => (
@@ -133,11 +137,13 @@ export default function TicTacToe() {
                         </div>
                     ))}
                     {winner && (
-                    <div className="text-center mt-4 text-2xl font-bold justify-center">
-                        {winner === "draw" ? "It's a draw!" : `Winner: ${winner}`}
-                    </div>
-                )}
-                <Button onClick={resetGame} className='py-2 rounded-lg border-2 font-bold hover:bg-bgSecondary hover:cursor-pointer'>Reset Game</Button>
+                        <div className="text-center mt-4 text-2xl font-bold justify-center">
+                            {winner === 'draw' 
+                                ? (t?.tictactoe?.draw_text || 'Döntetlen!') 
+                                : `${t?.tictactoe?.winner_text} ${winner}`}
+                        </div>
+                    )}
+                <Button onClick={resetGame} className='py-2 rounded-lg border-2 font-bold hover:bg-bgSecondary hover:cursor-pointer'>{ t?.tictactoe?.reset_button }</Button>
                 </div> 
             </div>
         </div>

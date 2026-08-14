@@ -28,5 +28,11 @@
             "under_development": "Fejlesztés alatt",
             "production_ready": "Elkészült"
         }
+    },
+    "tictactoe": {
+        "page_title": "Amőba játék",
+        "reset_button": "Visszaállítás",
+        "winner_text": "Győztes: ",
+        "draw_text": "Döntetlen"
     }
 }

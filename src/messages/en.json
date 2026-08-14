@@ -28,5 +28,11 @@
             "under_development": "Under Development",
             "production_ready": "Production Ready"
         }
+    },
+    "tictactoe": {
+        "page_title": "Tic Tac Toe Game",
+        "reset_button": "Reset Game",
+        "winner_text": "Winner: ",
+        "draw_text": "Döntetlen"
     }
 }
