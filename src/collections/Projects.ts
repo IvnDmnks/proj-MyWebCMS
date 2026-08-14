@@ -17,10 +17,16 @@ const Projects: CollectionConfig = {
             label: 'Project Title',
         },
         {
-            name: 'description',
+            name: 'descriptionHU',
             type: 'textarea',
             required: true,
-            label: 'Project Description',
+            label: 'Project Description HU',
+        },
+        {
+            name: 'descriptionEN',
+            type: 'textarea',
+            required: true,
+            label: 'Project Description EN'
         },
         {
             name: 'ProjLink',

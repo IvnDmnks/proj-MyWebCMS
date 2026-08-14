@@ -19,5 +19,14 @@
             "weather_cta": "Mellesleg, ha kíváncsi vagy az itteni időjárásra, itt meglesheted (ez a saját időjárás API oldalam):",
             "weather_url": "https://ivandomonkos.site/weather"
         }
+    },
+    "projects": {
+        "page_title": "A legútóbbi projektjeim:",
+        "github_link": "GitHub Repository",
+        "status_label": "Állapot",
+        "project_status":  {
+            "under_development": "Fejlesztés alatt",
+            "production_ready": "Elkészült"
+        }
     }
 }

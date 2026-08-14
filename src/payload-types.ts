@@ -176,7 +176,8 @@ export interface Media {
 export interface Project {
   id: number;
   ProjTitle: string;
-  description: string;
+  descriptionHU: string;
+  descriptionEN: string;
   ProjLink?: string | null;
   Availability: 'under_development' | 'production_ready';
   updatedAt: string;
@@ -326,7 +327,8 @@ export interface MediaSelect<T extends boolean = true> {
  */
 export interface ProjectsSelect<T extends boolean = true> {
   ProjTitle?: T;
-  description?: T;
+  descriptionHU?: T;
+  descriptionEN?: T;
   ProjLink?: T;
   Availability?: T;
   updatedAt?: T;
