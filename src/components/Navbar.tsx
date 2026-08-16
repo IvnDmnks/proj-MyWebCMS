@@ -14,7 +14,7 @@ export default function Navbar() {
   const navLinks = [
     { href: '/homepage', label: t.navbar.greetings },
     { href: '/ownprojects', label: t.navbar.proj },
-    { href: '/roadmap', label: t.navbar.roadmap },
+    { href: '/myphotos', label: t.navbar.myphotos },
     { href: '/tictactoe', label: t.navbar.tictactoe },
     { href: '/webshop', label: t.navbar.webshop },
   ];

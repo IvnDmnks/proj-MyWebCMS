@@ -2,7 +2,7 @@
     "navbar": {
         "greetings": "Szia! A nevem...",
         "proj": "Projektjeim",
-        "roadmap": "Út a mérnökségig",
+        "myphotos": "Fényképeim",
         "tictactoe": "Amőba",
         "webshop": "Webshop"
     },
@@ -34,5 +34,13 @@
         "reset_button": "Visszaállítás",
         "winner_text": "Győztes: ",
         "draw_text": "Döntetlen"
+    },
+    "myphotos": {
+        "theme_name": "Téma",
+        "allfolder": "Összes Téma",
+        "galerie_themes": "Galéria Témakörök",
+        "picture": "Kép",
+        "click_to_extend": "Katt a nagyításhoz",
+        "back_text": "Vissza"
     }
 }
