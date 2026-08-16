@@ -69,6 +69,15 @@ export default function MyPhotos() {
             <h1 className="text-3xl md:text-4xl p-4 my-6 font-bold text-center border border-bgSecondary rounded-lg bg-bgSecondary">
             My Photos
             </h1>
+            <div className='mb-6 md:mb-8 p-4 border-l-4 border-red-400 bg-red-500/10 rounded-r-lg text-red-900 dark:text-red-200 shadow-sm'>
+                <div className='flex items-center gap-2 font-bold text-base md:text-lg'>
+                <span>🔴</span>
+                <span>{t.myphotos.note}</span>
+            </div>
+            <p className='mt-1 text-sm md:text-base opacity-90'>
+            {t.homepage.notice.description}
+            </p>
+        </div>
             <div className="flex flex-col md:flex-row gap-6 mb-8">
             <aside className="w-full md:w-64 flex flex-col gap-2">
                 <h2 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground px-2 mb-2">

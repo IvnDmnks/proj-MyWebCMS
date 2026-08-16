@@ -1,6 +1,6 @@
 {
     "navbar": {
-        "greetings": "Hi! My name is...",
+        "greetings": "Homepage",
         "proj": "Projects",
         "myphotos": "My Photos",
         "tictactoe": "TicTacToe",
@@ -11,8 +11,8 @@
             "title": "Under Development! 🚧",
             "description": "This website is currently under active development. Some features or content may be incomplete or missing."
         },
-        "title": "Hi! I'm Iván Domonkos!",
-        "h2_title": "This is a simple web project to show my skills in web development.",
+        "title": "Dear Traveler!",
+        "h2_title": "Welcome to my website! This is a simple web project that showcases my web development skills. I have bigger plans for it down the line!",
         "about": {
             "title": "About me",
             "description": "I'm a Computer Science Engineering student at the Budapest University of Technology and Economics (BME). Sometimes I tell the computer what to do – and sometimes it even listens to me.",
@@ -41,6 +41,7 @@
         "galerie_themes": "Gallerie Themes",
         "picture_load": "Loading Pictures...",
         "click_to_extend": "Click to expand",
-        "back_text": "Back"
+        "back_text": "Back",
+        "note": "Vercel doesn't allow high-resolution images to be uploaded; I'll have to switch things up, and then there will be proper images too. :)"
     }
 }

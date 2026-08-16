@@ -1,6 +1,6 @@
 {
     "navbar": {
-        "greetings": "Szia! A nevem...",
+        "greetings": "Kezdőlap",
         "proj": "Projektjeim",
         "myphotos": "Fényképeim",
         "tictactoe": "Amőba",
@@ -11,11 +11,11 @@
             "title": "Fejlesztés alatt! 🚧",
             "description": "Az oldal jelenleg folyamatos fejlesztés alatt áll. Néhány funkció vagy tartalom még hibás lehet vagy hiányozhat."
         },
-        "title": "Szia! Domi vagyok!",
-        "h2_title": "Ez egy szimpla webprojekt ami megmutatja mit tudok a webfejlesztésben.",
+        "title": "Kedves Vándor!",
+        "h2_title": "Üdvözöllek a weboldalamon! Ez egy szimpla webprojekt ami megmutatja mit tudok a webfejlesztésben. Később nagyobb terveim is lesznek vele!",
         "about": {
             "title": "Rólam",
-            "description": "Mérnökinformatikus hallgató vagyok a Budapesti Műszaki és Gazdaságtudományi Egyetemen (BME). Néha megmondom a számítógépnek, mit csináljon – és néha még hallgat is rám.",
+            "description": "Mérnökinformatikus hallgató vagyok a Budapesti Műszaki és Gazdaságtudományi Egyetemen (BME). Megmondom a számítógépnek, mit csináljon – és néha még hallgat is rám.",
             "weather_cta": "Mellesleg, ha kíváncsi vagy az itteni időjárásra, itt meglesheted (ez a saját időjárás API oldalam):",
             "weather_url": "https://ivandomonkos.site/weather"
         }
@@ -41,6 +41,7 @@
         "galerie_themes": "Galéria Témakörök",
         "picture_load": "Képek betöltése...",
         "click_to_extend": "Katt a nagyításhoz",
-        "back_text": "Vissza"
+        "back_text": "Vissza",
+        "note": "Vercel nem enged nagy felbondású képeket feltölteni, majd váltanom kell és lesznek rendes képek is :)"
     }
 }
