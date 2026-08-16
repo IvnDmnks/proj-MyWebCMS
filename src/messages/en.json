@@ -34,5 +34,13 @@
         "reset_button": "Reset Game",
         "winner_text": "Winner: ",
         "draw_text": "Döntetlen"
+    },
+    "myphotos": {
+        "theme_name": "Theme",
+        "allfolder": "All Theme",
+        "galerie_themes": "Gallerie Themes",
+        "picture": "Picture",
+        "click_to_extend": "Click to expand",
+        "back_text": "Back"
     }
 }
