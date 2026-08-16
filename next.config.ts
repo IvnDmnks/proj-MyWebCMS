@@ -17,6 +17,9 @@ const nextConfig: NextConfig = {
         pathname: '/api/media/file/**',
       }
     ]
+  },
+  serverActions: {
+    bodySizeLimit: '30mb'
   }
 };
 
