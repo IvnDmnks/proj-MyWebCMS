@@ -71,6 +71,7 @@ export interface Config {
     media: Media;
     projects: Project;
     webshop: Webshop;
+    'photo-categories': PhotoCategory;
     'payload-kv': PayloadKv;
     'payload-locked-documents': PayloadLockedDocument;
     'payload-preferences': PayloadPreference;
@@ -82,6 +83,7 @@ export interface Config {
     media: MediaSelect<false> | MediaSelect<true>;
     projects: ProjectsSelect<false> | ProjectsSelect<true>;
     webshop: WebshopSelect<false> | WebshopSelect<true>;
+    'photo-categories': PhotoCategoriesSelect<false> | PhotoCategoriesSelect<true>;
     'payload-kv': PayloadKvSelect<false> | PayloadKvSelect<true>;
     'payload-locked-documents': PayloadLockedDocumentsSelect<false> | PayloadLockedDocumentsSelect<true>;
     'payload-preferences': PayloadPreferencesSelect<false> | PayloadPreferencesSelect<true>;
@@ -201,6 +203,23 @@ export interface Webshop {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "photo-categories".
+ */
+export interface PhotoCategory {
+  id: number;
+  name: string;
+  coverImage: number | Media;
+  images?:
+    | {
+        image: number | Media;
+        id?: string | null;
+      }[]
+    | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "payload-kv".
  */
 export interface PayloadKv {
@@ -238,6 +257,10 @@ export interface PayloadLockedDocument {
     | ({
         relationTo: 'webshop';
         value: number | Webshop;
+      } | null)
+    | ({
+        relationTo: 'photo-categories';
+        value: number | PhotoCategory;
       } | null);
   globalSlug?: string | null;
   user: {
@@ -344,6 +367,22 @@ export interface WebshopSelect<T extends boolean = true> {
   itemPrice?: T;
   itemImage?: T;
   itemAvailability?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "photo-categories_select".
+ */
+export interface PhotoCategoriesSelect<T extends boolean = true> {
+  name?: T;
+  coverImage?: T;
+  images?:
+    | T
+    | {
+        image?: T;
+        id?: T;
+      };
   updatedAt?: T;
   createdAt?: T;
 }
