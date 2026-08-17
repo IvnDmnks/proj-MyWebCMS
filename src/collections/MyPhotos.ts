@@ -5,6 +5,9 @@ const MyPhotos: CollectionConfig = {
     access: {
         read: () => true,
     },
+    upload: {
+        disableLocalStorage: true,
+    },
     labels: {
         singular: 'Fotó Kategória',
         plural: 'Fotó Kategóriák'
