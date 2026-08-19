@@ -1,6 +1,5 @@
 // storage-adapter-import-placeholder
 import { postgresAdapter } from '@payloadcms/db-postgres'
-import { payloadCloudPlugin } from '@payloadcms/payload-cloud'
 import { lexicalEditor } from '@payloadcms/richtext-lexical'
 import path from 'path'
 import { buildConfig } from 'payload'
@@ -12,6 +11,8 @@ import { Media } from './collections/Media'
 import Projects from './collections/Projects'
 import WebShop from './collections/WebShop'
 import MyPhotos from './collections/MyPhotos'
+
+import { vercelBlobStorage } from '@payloadcms/storage-vercel-blob';
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
@@ -36,7 +37,11 @@ export default buildConfig({
   }),
   sharp,
   plugins: [
-    payloadCloudPlugin(),
-    // storage-adapter-placeholder
+    vercelBlobStorage({
+      collections: {
+        'media': true,
+      },
+      token: process.env.BLOB_READ_WRITE_TOKEN,
+    }),
   ],
 })
